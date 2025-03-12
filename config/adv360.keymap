@@ -21,27 +21,17 @@
         };
     };
 
-    macros {
-        layer_for_rigth: layer_for_rigth {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&mo 2>, <&macro_tap>, <&kp ENTER>;
-
-            label = "LAYER_FOR_RIGTH";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TILDE  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                       &mo 3             &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                                        &none             &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none      &kp LCTRL                    &kp LALT      &kp LGUI   &kp RCTRL   &none             &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                           &kp HOME      &kp PG_UP                                &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp EQUAL
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp SPACE  &mt RIGHT_CONTROL BACKSPACE  &kp END       &kp PG_DN  &kp RSHIFT  &layer_for_rigth          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp GRAVE     &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                       &mo 3        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB       &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                                        &none        &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC       &kp A      &kp S     &kp D     &kp F      &kp G   &none      &kp LCTRL                    &kp LALT      &kp LGUI   &kp RCTRL   &none        &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LEFT_GUI  &kp Z      &kp X     &kp C     &kp V      &kp B                                           &kp HOME      &kp PG_UP                           &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp EQUAL
+&mo 2         &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp SPACE  &mt RIGHT_CONTROL BACKSPACE  &kp END       &kp PG_DN  &kp RSHIFT  &lt 2 ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
