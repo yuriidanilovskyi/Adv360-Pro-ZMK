@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CONTROL_WITH_BACKSPACE";
             #binding-cells = <0>;
-            bindings = <&mt LCTRL BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&mt LCTRL BACKSPACE>, <&mt BACKSPACE BACKSPACE>;
 
             tapping-term-ms = <120>;
         };
